@@ -9,3 +9,4 @@ main = "cmd/server/index.ts"
 binding = "DB" # i.e. available in your Worker on env.DB
 database_name = "test-app"
 database_id = "xxx"
+migrations_dir = "./schema/db/migrations"

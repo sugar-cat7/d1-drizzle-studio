@@ -6,7 +6,7 @@ const cfConfig = {
   driver: 'd1',
   dbCredentials: {
     wranglerConfigPath: './wrangler.toml',
-    dbName: 'test-app',
+    dbName: 'test-db',
   },
   verbose: false,
   strict: true,
@@ -16,7 +16,7 @@ const localConfig = {
   schema: './schema/db/schema.ts',
   driver: 'better-sqlite',
   dbCredentials: {
-    url: process.env.DB_URL!,
+    url: "./.wrangler/state/v3/d1/miniflare-D1DatabaseObject/xxx.sqlite"
   },
 } satisfies Config
 
